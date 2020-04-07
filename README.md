@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assert/readme/Group1.png">
+  <img src="assets/readmes/readme.png">
 </p>
 <h1 align="center">ZiPi IoT!</1>
 <h3 align="center">Simple yet powerful, Tracker and manage IoT devices</h3>
