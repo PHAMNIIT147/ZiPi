@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="web/icons/logo.png">
+  <img src="assert/readme/Group1.png">
 </p>
 <h1 align="center">ZiPi IoT!</1>
 <h3 align="center">Simple yet powerful, Tracker and manage IoT devices</h3>
 
-### About IoTT go!
+### About ZiPi IoT!
 
 A new Flutter project.
 
