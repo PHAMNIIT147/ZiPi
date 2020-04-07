@@ -18,7 +18,11 @@ class NavigationBar extends StatelessWidget {
               SizedBox(
                 width: 60,
               ),
-              _NavBar('About')
+              _NavBar('Product'),
+              SizedBox(
+                width: 60,
+              ),
+              _NavBar('About'),
             ],
           )
         ],
@@ -35,7 +39,7 @@ class _NavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18),
+      style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),
     );
   }
 }
