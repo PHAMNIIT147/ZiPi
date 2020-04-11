@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:zipi/routes/route_names.dart';
 import 'package:zipi/views/about/about_view.dart';
 import 'package:zipi/views/home_view/home_view.dart';
-import 'package:zipi/views/product/products_view.dart';
+import 'package:zipi/views/products/products_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   print('generateRoute: ${settings.name}');
