@@ -1,8 +1,14 @@
+//system
 import 'package:flutter/material.dart';
-
-import 'package:zipi/views/home_view/home_view.dart';
+import 'package:zipi/locator.dart';
+import 'package:zipi/routes/route_names.dart';
+import 'package:zipi/routes/router.dart';
+import 'package:zipi/services/navigation_service.dart';
+//developer
+import 'package:zipi/views/layout/template/template.dart';
 
 void main() {
+  setupLocator();
   runApp(MyApp());
 }
 
@@ -31,7 +37,12 @@ class MyApp extends StatelessWidget {
           textTheme: Theme.of(context).textTheme.apply(
                 fontFamily: 'Open Sans',
               )),
-      home: HomeView(),
+      builder: (context, child) => LayoutTemplate(
+        child: child,
+      ),
+      navigatorKey: locator<NavigationService>().navigatorKey,
+      onGenerateRoute: generateRoute,
+      initialRoute: HomeRoute,
     );
   }
 }
