@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:zipi/constant/app_colors.dart';
 import 'package:zipi/routes/route_names.dart';
-import 'package:zipi/widgets/navigation_drawer/drawner_item.dart';
+import 'package:zipi/widgets/navbar_item/navbar_item.dart';
 import 'package:zipi/widgets/navigation_drawer/navigation_drawer_header.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -9,16 +10,31 @@ class NavigationDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
+      width: 200,
       decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
+        color: drawnerColor,
+        boxShadow: [
+          BoxShadow(color: Colors.black12, blurRadius: 16),
+        ],
+      ),
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          DrawnerItem('Home', Icons.home, HomeRoute),
-          DrawnerItem('Product', Icons.work, ProductRoute),
-          DrawnerItem('About', Icons.help, AboutRoute),
+          NavBarItem(
+            'Home',
+            HomeRoute,
+            icon: Icons.home,
+          ),
+          NavBarItem(
+            'Products',
+            ProductRoute,
+            icon: Icons.apps,
+          ),
+          NavBarItem(
+            'About',
+            AboutRoute,
+            icon: Icons.help,
+          )
         ],
       ),
     );
