@@ -6,6 +6,7 @@ import 'package:zipi/locator.dart';
 import 'package:zipi/services/navigation_service.dart';
 import 'package:zipi/widgets/navbar_item/navbar_item_mobile.dart';
 import 'package:zipi/widgets/navbar_item/navbar_item_tablet_desktop.dart';
+import 'package:zipi/extensions/hover_extensions.dart';
 
 class NavBarItem extends StatelessWidget {
   final String title;
@@ -27,7 +28,7 @@ class NavBarItem extends StatelessWidget {
         child: ScreenTypeLayout(
           tablet: NavBarItemTabletDesktop(),
           mobile: NavBarItemMobile(),
-        ),
+        ).showCursorOnHover.moveUpHover,
       ),
     );
   }

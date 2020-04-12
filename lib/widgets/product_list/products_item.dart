@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:zipi/constant/app_colors.dart';
 import 'package:zipi/datamodels/product_item_models.dart';
 
+import 'package:zipi/extensions/hover_extensions.dart';
+
 class ProductsItem extends StatelessWidget {
   final ProductItemModel model;
   const ProductsItem({Key key, this.model}) : super(key: key);
@@ -51,6 +53,6 @@ class ProductsItem extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ).showCursorOnHover.moveUpHover;
   }
 }
