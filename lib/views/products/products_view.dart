@@ -20,7 +20,7 @@ class ProductsView extends StatelessWidget {
             SizedBox(height: 100,),
             SeasonDetails(
               details: SeasonDetailsModel(
-                  title: 'Lorem ipsum', description: 'Lorem ipsum '),
+                  title: 'Lorem ipsum', description: 'Lorem ipsum best solution for devices smart IoT'),
             ),
             SizedBox(height: 50,),
             model.products == null
