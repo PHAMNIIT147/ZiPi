@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:zipi/constant/app_colors.dart';
 import 'package:zipi/widgets/centered_view/centered_view.dart';
 import 'package:zipi/widgets/navigation_bar/navigation_bar.dart';
 import 'package:zipi/widgets/navigation_drawer/navigation_drawer.dart';
@@ -15,7 +16,7 @@ class LayoutTemplate extends StatelessWidget {
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.Mobile
             ? NavigationDrawer()
             : null,
-        backgroundColor: Color.fromRGBO(23, 33, 47, 1),
+        backgroundColor: templateColor,
         body: CenteredView(
           child: Column(
             children: <Widget>[
