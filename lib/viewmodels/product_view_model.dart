@@ -6,7 +6,7 @@ class ProductViewModel extends ChangeNotifier {
     ProductItemModel(
       title: 'Smart city',
       duration: 11.4,
-      imageURL: 'assets/images/smart_city.png'
+      imageURL: 'assets/images/smart_city.jpg'
     ),
     ProductItemModel(
       title: 'Smart hospital',
@@ -16,8 +16,13 @@ class ProductViewModel extends ChangeNotifier {
     ProductItemModel(
       title: 'Smart home',
       duration: 11.4,
-      imageURL: 'assets/images/smart_home.png'
-    )
+      imageURL: 'assets/images/smart_home.jpg'
+    ),
+    ProductItemModel(
+      title: 'Smart airport',
+      duration: 12.4,
+      imageURL: 'assets/images/smart_airport.jpg'
+    ),
   ];
 
 }
