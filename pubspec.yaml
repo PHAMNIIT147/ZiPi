@@ -52,8 +52,11 @@ flutter:
   assets:
      - assets/logos/logo.png
      - assets/images/smart_city.png
+     - assets/images/smart_city.jpg
      - assets/images/smart_home.png
+     - assets/images/smart_home.jpg
      - assets/images/smart_hospital.png
+     - assets/images/smart_airport.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
