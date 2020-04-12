@@ -7,7 +7,7 @@ class NavBarItemTabletDesktop extends ProviderWidget<NavBarItemModel> {
   Widget build(BuildContext context, NavBarItemModel model) {
     return Text(
       model.title,
-      style: TextStyle(fontSize: 20),
+      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700, color: Colors.white),
     );
   }
 }

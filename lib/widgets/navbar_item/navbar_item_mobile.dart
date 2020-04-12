@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_architecture/provider_architecture.dart';
+import 'package:zipi/constant/app_colors.dart';
 import 'package:zipi/datamodels/navbar_item_models.dart';
 
 class NavBarItemMobile extends ProviderWidget<NavBarItemModel> {
@@ -9,13 +10,20 @@ class NavBarItemMobile extends ProviderWidget<NavBarItemModel> {
       padding: const EdgeInsets.only(left: 30.0, top: 60.0),
       child: Row(
         children: <Widget>[
-          Icon(model.iconData),
+          Icon(
+            model.iconData,
+            color: primaryColor,
+          ),
           SizedBox(
             width: 30.0,
           ),
           Text(
             model.title,
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+              color: primaryColor,
+            ),
           ),
         ],
       ),
